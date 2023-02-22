@@ -141,7 +141,7 @@ header a:hover{
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 20px;
-    padding-top: 20%;
+    padding-top: 0%;
 }
 #sp{
     color: aliceblue;
@@ -169,10 +169,12 @@ h4, .p{
     margin-top: 20%;
     justify-content: center;
 }
-.img-container{
+.img-container img{
     align-items: center;
     justify-content: center;
-    padding-left: 8%;
+    padding-left: 28%;
+    margin-left: -80px;
+    
 }
 .title{
     padding-top: 10%;
@@ -203,11 +205,11 @@ svg{
     margin-bottom: 15%;
 }
 
-@media (max-width:720px){
+@media (max-width:1000px){
 
     header .container{
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
         padding-left: 20px;
     }
     header nav{
@@ -220,10 +222,26 @@ svg{
         flex-direction: column;
     }
     #opciones{
+        margin: auto;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-
+    .logo{
+        margin-top: 10%;
+    }
     #ultima{
-        padding-top: 0% ;
+        padding-top: 20% ;
+    }
+    
+    .img-container img{
+        padding-right: 10%;
+        padding-left: 10%;
+        width: 400px;
+        height: 500px;
+        
+    }
+
+    h3{
+        font-size:large;
     }
 }
